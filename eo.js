@@ -1,4 +1,4 @@
-import { Parser, normalize, modifySk, workEo } from "./common.js";
+import { Parser, normalize, modifySk, wordEo } from "./common.js";
 
 const phonemes = (function () {
     let ret = {};
