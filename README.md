@@ -1,2 +1,8 @@
 # conlang-tts
-Converted to other language spellings to speak the constructed languages with TTS
+
+Convert spellings to speak constructed languages with TTS
+
+# Demo
+
+* [Speak Esperanto (Convert)](https://codepen.io/7shi/pen/gOeGGXg)
+* [Speak Ido (Convert)](https://codepen.io/7shi/pen/JjvVyBM)
