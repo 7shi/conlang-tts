@@ -6,14 +6,6 @@ export class Parser {
     next() { this.pos++; }
 }
 
-export function normalize(ch) {
-    if (!ch) return ch;
-    ch = ch.toLowerCase();
-    if (ch.match(/[a-z]/) || ch in phonemes) return ch;
-    if (ch.match(/[éèê]/)) return "e";
-    return null;
-}
-
 export function modifySk(s) {
     return s
         .replace(/ii/g, "i-i")

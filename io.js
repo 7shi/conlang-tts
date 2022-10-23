@@ -1,4 +1,4 @@
-import { Parser, normalize, modifySk, wordIo } from "./common.js";
+import { Parser, modifySk, wordIo } from "./common.js";
 
 const [phonemes, phonemes2] = (function () {
     let ret1 = {}, ret2 = {};
@@ -14,6 +14,14 @@ const [phonemes, phonemes2] = (function () {
     set("r,r s,s sh,š t,t u,u v,v w,u x,ks y,j z,z");
     return [ret1, ret2];
 })();
+
+function normalize(ch) {
+    if (!ch) return ch;
+    ch = ch.toLowerCase();
+    if (ch.match(/[a-z]/) || ch in phonemes) return ch;
+    if (ch.match(/[éèê]/)) return "e";
+    return null;
+}
 
 function isVowel(ph) {
     return "aeiou".includes(ph);
