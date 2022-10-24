@@ -83,77 +83,77 @@ export function modifySk(s) {
         .replace(/(?<!r)és(s?)(?=[aeiou])/, "éess");
 }
 
-// Esperanto and Ido
-const TableEoIo = {
-    la: "la",
-    da: "da",
-    de: "de",
-    di: "di",
-    do: "do",
-    du: "du",
-    en: "n",
-    ne: "ne",
-    un: "unn",
-    sed: "sed",
-    sep: "sep",
-    dek: "dek",
-    pli: "pli",
-    mil: "mill",
-    nun: "nun",
-    amis: "ám-is",
-    ho: "hoó",
-    je: "je",
-    ke: "kke",
-    tra: "tra",
-    trans: "trans",
-    troa: "tro-oa",
-};
-
-// Esperanto
-const TableEo = {
-    jes: "jes",
-    aŭ: "a-u",
-    ĉi: "či",
-    ĝi: "dži",
-    ĝin: "džin",
-    taŭgan: "táwgan",
-    kun: "kun",
-    strange: "stránge",
-};
-
-// Ido
-const TableIo = {
-    yes: "jes",
-    no: "no",
-    a: "a",
-    ad: "adt",
-    e: "e",
-    ed: "ed",
-    o: "o",
-    od: "od",
-    on: "on",
-    ca: "tcá",
-    ma: "ma",
-    tam: "tam",
-    kam: "kam",
-    ka: "ka",
-    ta: "ta",
-    to: "to",
-    se: "sse",
-    dop: "dop",
-    aden: "ádden",
-    ante: "ante",
-    ye: "je",
-    co: "co",
-    an: "ann",
-    uldie: "uldíe",
-    omnadie: "omnadíe",
+const table = {
+    // Esperanto and Ido
+    eo_io: {
+        la: "la",
+        da: "da",
+        de: "de",
+        di: "di",
+        do: "do",
+        du: "du",
+        en: "n",
+        ne: "ne",
+        un: "unn",
+        sed: "sed",
+        sep: "sep",
+        dek: "dek",
+        pli: "pli",
+        mil: "mill",
+        nun: "nun",
+        amis: "ám-is",
+        ho: "hoó",
+        je: "je",
+        ke: "kke",
+        tra: "tra",
+        trans: "trans",
+        troa: "tro-oa",
+    },
+    // Esperanto
+    eo: {
+        jes: "jes",
+        aŭ: "a-u",
+        ĉi: "či",
+        ĝi: "dži",
+        ĝin: "džin",
+        taŭgan: "táwgan",
+        kun: "kun",
+        strange: "stránge",
+    },
+    // Ido
+    io: {
+        yes: "jes",
+        no: "no",
+        a: "a",
+        ad: "adt",
+        e: "e",
+        ed: "ed",
+        o: "o",
+        od: "od",
+        on: "on",
+        ca: "tcá",
+        ma: "ma",
+        tam: "tam",
+        kam: "kam",
+        ka: "ka",
+        ta: "ta",
+        to: "to",
+        se: "sse",
+        dop: "dop",
+        aden: "ádden",
+        ante: "ante",
+        ye: "je",
+        co: "co",
+        an: "ann",
+        uldie: "uldíe",
+        omnadie: "omnadíe",
+    }
 };
 
 export function wordEo(word) {
-    return TableEoIo[word] ?? TableEo[word];
+    return table.eo_io[word] ?? table.eo[word];
 }
 
 export function wordIo(word) {
-    return TableEoIo[word] ?? TableIo[word];
+    return table.eo_io[word] ?? table.io[word];
 }
