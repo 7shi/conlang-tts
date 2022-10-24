@@ -52,7 +52,7 @@ export function modifySk(s) {
         .replace(/[eé]nc/, "ents")
         .replace(/áwg/, "awg")
         .replace(/(?<=[aeiou])c(?=[eé])/, "ts")
-        .replace(/c(?=[oó])/, "ts")
+        .replace(/c(?=[oó])/, "tc")
         .replace(/éc/, "é-c")
         .replace(/ésm/g, "é-sm")
         .replace(/áng/, "aang")
