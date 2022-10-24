@@ -20,7 +20,7 @@ undefined
 
 # Demo
 
-These do not reference this repository, but are based on the same code base.
+These demos do not reference this repository, but are based on the same code base.
 
 * [Speak Esperanto (Convert)](https://codepen.io/7shi/pen/gOeGGXg)
 * [Speak Ido (Convert)](https://codepen.io/7shi/pen/JjvVyBM)
