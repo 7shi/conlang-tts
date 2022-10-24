@@ -29,6 +29,7 @@ export function modifySk(s) {
         .replace(/íno$/, "í-no")
         .replace(/([td])e$/, "-$1e")
         .replace(/so$/, "ssoo")
+        .replace(/son$/, "ss-on")
         .replace(/lúas$/, "lú-ass")
         .replace(/s(?=[aeiu])$/, "ss")
         .replace(/ár(?![-raeiou])/, "ar")
