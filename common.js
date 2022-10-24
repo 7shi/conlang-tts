@@ -150,10 +150,10 @@ const TableIo = {
     omnadie: "omnadíe",
 };
 
-export function wordEo(lang, word) {
+export function wordEo(word) {
     return TableEoIo[word] ?? TableEo[word];
 }
 
-export function wordIo(lang, word) {
+export function wordIo(word) {
     return TableEoIo[word] ?? TableIo[word];
 }
