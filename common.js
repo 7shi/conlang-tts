@@ -73,10 +73,10 @@ export function modifySk(s) {
         .replace(/ó-t/, "oo-t")
         .replace(/ksh/g, "ks-h")
         .replace(/fier/g, "fieer")
-        .replace(/(?<=[ft])r(?=[éo])/g, "rr")
+        .replace(/(?<=.[ft])r(?=[éo])/g, "rr")
         .replace(/ur(?!r)/g, "urr")
         .replace(/úl(?![aeiou])/, "ul")
-        .replace(/(?<!n)úl(?=[aeiou])/, "úul")
+        .replace(/(?<![nk])úl(?=[aeiou])/, "úul")
         .replace(/šám(?=[aiu])/, "ša-am")
         .replace(/(?<=..)nl/g, "nnl")
         .replace(/^és(?=[aeiou])/, "eess")
@@ -119,7 +119,7 @@ const table = {
         ĝin: "džin",
         taŭgan: "táwgan",
         kun: "kun",
-        strange: "stránge",
+        strange: "straange",
     },
     // Ido
     io: {
